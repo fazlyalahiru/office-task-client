@@ -4,7 +4,7 @@
     "clientName": "Client A",
     "assignedBy": "John",
     "taskDescription": "Complete project proposal",
-    "assignedTo": "Alice",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-08-25",
     "comment": "5"
   },
@@ -13,7 +13,7 @@
     "clientName": "Client B",
     "assignedBy": "Jane",
     "taskDescription": "Design UI mockups",
-    "assignedTo": "Bob",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-08-26",
     "comment": "12"
   },
@@ -22,7 +22,7 @@
     "clientName": "Client C",
     "assignedBy": "Mark",
     "taskDescription": "Implement backend API",
-    "assignedTo": "Chris",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-08-27",
     "comment": "7"
   },
@@ -31,7 +31,7 @@
     "clientName": "Client D",
     "assignedBy": "Emma",
     "taskDescription": "Write user documentation",
-    "assignedTo": "David",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-08-28",
     "comment": "8"
   },
@@ -40,7 +40,7 @@
     "clientName": "Client E",
     "assignedBy": "Michael",
     "taskDescription": "Fix bugs in the frontend",
-    "assignedTo": "Sophia",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-08-29",
     "comment": "22"
   },
@@ -49,7 +49,7 @@
     "clientName": "Client F",
     "assignedBy": "William",
     "taskDescription": "Create marketing materials",
-    "assignedTo": "Olivia",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-08-30",
     "comment": "18"
   },
@@ -58,7 +58,7 @@
     "clientName": "Client G",
     "assignedBy": "Ethan",
     "taskDescription": "Test application performance",
-    "assignedTo": "Liam",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-08-31",
     "comment": "2"
   },
@@ -67,7 +67,7 @@
     "clientName": "Client H",
     "assignedBy": "Ava",
     "taskDescription": "Create database schema",
-    "assignedTo": "Noah",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-09-01",
     "comment": "33"
   },
@@ -76,7 +76,7 @@
     "clientName": "Client I",
     "assignedBy": "Mia",
     "taskDescription": "Optimize server performance",
-    "assignedTo": "Emma",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-09-02",
     "comment": "10"
   },
@@ -85,7 +85,7 @@
     "clientName": "Client J",
     "assignedBy": "James",
     "taskDescription": "Prepare project presentation",
-    "assignedTo": "Lucas",
+    "assignedTo": "https://i.ibb.co/3W54kbH/photo-2023-02-28-10-45-30.jpg",
     "date": "2023-09-03",
     "comment": "2"
   }

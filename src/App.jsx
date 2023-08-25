@@ -12,40 +12,76 @@ const App = () => {
   }, []);
   return (
     <div className="flex h-screen overflow-x-scroll bg-white gap-2 py-2">
-      <div className="flex w-full gap-2 p-2">
-        <div className="w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
+      <div className="md:flex w-full  p-2">
+        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
+          <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center gap-2 py-3">
+              <div className="h-[20px] w-[20px] bg-red-600 rounded-l-full"></div>
+              <div className="font-semibold">Incompleted </div>
+            </div>
+            <span className="bg-[#E8EEF3] py-1 px-2 text-sm font-semibold">
+              {tasks.length}
+            </span>
+          </div>
           {tasks.map((task) => (
-            // eslint-disable-next-line react/prop-types
             <IncompletedTask data={task} key={task.id} />
           ))}
         </div>
-
-        <div className="w-1/4 h-screen bg-blue-300 flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
-          <div className="h-36">this is inner div 1</div>
-          <div className="h-36 ">this is inner div 2</div>
-          <div className="h-36 ">this is inner div 3</div>
-          <div className="h-36">this is inner div 4</div>
+        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
+          <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center gap-2 py-3">
+              <div className="h-[20px] w-[20px] bg-[#00B5FF] rounded-l-full"></div>
+              <div className="font-semibold">To Do </div>
+            </div>
+            <span className="bg-[#E8EEF3] py-1 px-2 text-sm font-semibold">
+              {tasks.length}
+            </span>
+          </div>
+          {tasks.map((task) => (
+            <IncompletedTask data={task} key={task.id} />
+          ))}
         </div>
-
-        <div className="w-1/4 h-screen bg-gray-300 flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
-          <div className="h-36">this is inner div 1</div>
-          <div className="h-36 ">this is inner div 2</div>
-          <div className="h-36 ">this is inner div 3</div>
-          <div className="h-36">this is inner div 4</div>
+        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
+          <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center gap-2 py-3">
+              <div className="h-[20px] w-[20px] bg-[#FFE700] rounded-l-full"></div>
+              <div className="font-semibold">Doing</div>
+            </div>
+            <span className="bg-[#E8EEF3] py-1 px-2 text-sm font-semibold">
+              {tasks.length}
+            </span>
+          </div>
+          {tasks.map((task) => (
+            <IncompletedTask data={task} key={task.id} />
+          ))}
         </div>
-
-        <div className="w-1/4 h-screen bg-yellow-300 flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
-          <div className="h-36">this is inner div 1</div>
-          <div className="h-36 ">this is inner div 2</div>
-          <div className="h-36 ">this is inner div 3</div>
-          <div className="h-36">this is inner div 4</div>
+        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
+          <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center gap-2 py-3">
+              <div className="h-[20px] w-[20px] bg-orange-400 rounded-l-full"></div>
+              <div className="font-semibold">Under Review</div>
+            </div>
+            <span className="bg-[#E8EEF3] py-1 px-2 text-sm font-semibold">
+              {tasks.length}
+            </span>
+          </div>
+          {tasks.map((task) => (
+            <IncompletedTask data={task} key={task.id} />
+          ))}
         </div>
-
-        <div className="w-1/4 h-screen bg-purple-300 flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
-          <div className="h-36">this is inner div 1</div>
-          <div className="h-36 ">this is inner div 2</div>
-          <div className="h-36 ">this is inner div 3</div>
-          <div className="h-36">this is inner div 4</div>
+        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
+          <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center gap-2 py-3">
+              <div className="h-[20px] w-[20px] bg-green-600 rounded-l-full"></div>
+              <div className="font-semibold">Completed</div>
+            </div>
+            <span className="bg-[#E8EEF3] py-1 px-2 text-sm font-semibold">
+              {tasks.length}
+            </span>
+          </div>
+          {tasks.map((task) => (
+            <IncompletedTask data={task} key={task.id} />
+          ))}
         </div>
       </div>
     </div>

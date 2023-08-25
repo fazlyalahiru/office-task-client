@@ -11,7 +11,7 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #888888;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
