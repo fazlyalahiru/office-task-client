@@ -34,7 +34,7 @@ const App = () => {
             <Task data={task} key={task.id} />
           ))}
         </div>
-        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
+        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4 md:my-0 my-4">
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center gap-2 py-3">
               <div className="h-[20px] w-[20px] bg-[#00B5FF] rounded-l-full"></div>
@@ -62,7 +62,7 @@ const App = () => {
             <Task data={task} key={task.id} />
           ))}
         </div>
-        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
+        <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4 md:my-0 my-4">
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center gap-2 py-3">
               <div className="h-[20px] w-[20px] bg-orange-400 rounded-l-full"></div>
