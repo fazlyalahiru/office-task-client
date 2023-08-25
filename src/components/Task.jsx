@@ -2,7 +2,7 @@ import { BiSolidLayer, BiClipboard } from "react-icons/bi";
 import { AiFillCloseCircle, AiOutlineComment, AiOutlinePaperClip } from "react-icons/ai";
 import { MdDateRange } from "react-icons/md";
 import { useState } from "react";
-const IncompletedTask = ({ data }) => {
+const Task = ({ data }) => {
   const { clientName, assignedBy, taskDescription, assignedTo, date, comment } =
     data;
 
@@ -94,4 +94,4 @@ const IncompletedTask = ({ data }) => {
   );
 };
 
-export default IncompletedTask;
+export default Task;

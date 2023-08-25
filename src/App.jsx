@@ -1,14 +1,21 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import IncompletedTask from "./components/IncompletedTask";
+import Task from "./components/Task";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
+  const [todos, setTodos] = useState([]);
 
   useEffect(() => {
     fetch("tasks.json")
       .then((res) => res.json())
       .then((data) => setTasks(data));
+  }, []);
+
+  useEffect(() => {
+    fetch("todo.json")
+      .then((res) => res.json())
+      .then((data) => setTodos(data));
   }, []);
   return (
     <div className="flex h-screen overflow-x-scroll bg-white gap-2 py-2">
@@ -24,7 +31,7 @@ const App = () => {
             </span>
           </div>
           {tasks.map((task) => (
-            <IncompletedTask data={task} key={task.id} />
+            <Task data={task} key={task.id} />
           ))}
         </div>
         <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
@@ -34,11 +41,11 @@ const App = () => {
               <div className="font-semibold">To Do </div>
             </div>
             <span className="bg-[#E8EEF3] py-1 px-2 text-sm font-semibold">
-              {tasks.length}
+              {todos.length}
             </span>
           </div>
-          {tasks.map((task) => (
-            <IncompletedTask data={task} key={task.id} />
+          {todos.map((todo) => (
+            <Task data={todo} key={todo.id} />
           ))}
         </div>
         <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
@@ -52,7 +59,7 @@ const App = () => {
             </span>
           </div>
           {tasks.map((task) => (
-            <IncompletedTask data={task} key={task.id} />
+            <Task data={task} key={task.id} />
           ))}
         </div>
         <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
@@ -66,7 +73,7 @@ const App = () => {
             </span>
           </div>
           {tasks.map((task) => (
-            <IncompletedTask data={task} key={task.id} />
+            <Task data={task} key={task.id} />
           ))}
         </div>
         <div className="md:w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded mx-4">
@@ -80,7 +87,7 @@ const App = () => {
             </span>
           </div>
           {tasks.map((task) => (
-            <IncompletedTask data={task} key={task.id} />
+            <Task data={task} key={task.id} />
           ))}
         </div>
       </div>
