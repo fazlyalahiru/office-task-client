@@ -11,7 +11,7 @@ const App = () => {
       .then((data) => setTasks(data));
   }, []);
   return (
-    <div className="flex h-screen overflow-x-scroll">
+    <div className="flex h-screen overflow-x-scroll bg-white gap-2 py-2">
       <div className="flex w-full gap-2 p-2">
         <div className="w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
           {tasks.map((task) => (
