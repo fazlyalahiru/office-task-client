@@ -1,18 +1,52 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import IncompletedTask from "./components/IncompletedTask";
+
 const App = () => {
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    fetch("tasks.json")
+      .then((res) => res.json())
+      .then((data) => setTasks(data));
+  }, []);
   return (
     <div className="flex h-screen overflow-x-scroll">
-      <div className="flex w-full">
-        <div className="w-1/4 h-screen bg-red-300 flex-shrink-0">hello1</div>
+      <div className="flex w-full gap-2 p-2">
+        <div className="w-1/4 h-screen bg-[#F2F4F7] flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
+          {tasks.map((task) => (
+            // eslint-disable-next-line react/prop-types
+            <IncompletedTask data={task} key={task.id} />
+          ))}
+        </div>
 
-        <div className="w-1/4 h-screen bg-blue-300 flex-shrink-0">hello2</div>
+        <div className="w-1/4 h-screen bg-blue-300 flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
+          <div className="h-36">this is inner div 1</div>
+          <div className="h-36 ">this is inner div 2</div>
+          <div className="h-36 ">this is inner div 3</div>
+          <div className="h-36">this is inner div 4</div>
+        </div>
 
-        <div className="w-1/4 h-screen bg-green-300 flex-shrink-0">hello3</div>
+        <div className="w-1/4 h-screen bg-gray-300 flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
+          <div className="h-36">this is inner div 1</div>
+          <div className="h-36 ">this is inner div 2</div>
+          <div className="h-36 ">this is inner div 3</div>
+          <div className="h-36">this is inner div 4</div>
+        </div>
 
-        <div className="w-1/4 h-screen bg-yellow-300 flex-shrink-0">hello4</div>
+        <div className="w-1/4 h-screen bg-yellow-300 flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
+          <div className="h-36">this is inner div 1</div>
+          <div className="h-36 ">this is inner div 2</div>
+          <div className="h-36 ">this is inner div 3</div>
+          <div className="h-36">this is inner div 4</div>
+        </div>
 
-        <div className="w-1/4 h-screen bg-pink-300 flex-shrink-0">hello5</div>
-
-        <div className="w-1/4 h-screen bg-purple-300 flex-shrink-0">hello6</div>
+        <div className="w-1/4 h-screen bg-purple-300 flex-shrink-0 p-4  overflow-y-scroll custom-scrollbar rounded">
+          <div className="h-36">this is inner div 1</div>
+          <div className="h-36 ">this is inner div 2</div>
+          <div className="h-36 ">this is inner div 3</div>
+          <div className="h-36">this is inner div 4</div>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "clientName": "Client A",
+    "assignedBy": "John",
+    "taskDescription": "Complete project proposal",
+    "assignedTo": "Alice",
+    "date": "2023-08-25",
+    "comment": "5"
+  },
+  {
+    "id": 2,
+    "clientName": "Client B",
+    "assignedBy": "Jane",
+    "taskDescription": "Design UI mockups",
+    "assignedTo": "Bob",
+    "date": "2023-08-26",
+    "comment": "12"
+  },
+  {
+    "id": 3,
+    "clientName": "Client C",
+    "assignedBy": "Mark",
+    "taskDescription": "Implement backend API",
+    "assignedTo": "Chris",
+    "date": "2023-08-27",
+    "comment": "7"
+  },
+  {
+    "id": 4,
+    "clientName": "Client D",
+    "assignedBy": "Emma",
+    "taskDescription": "Write user documentation",
+    "assignedTo": "David",
+    "date": "2023-08-28",
+    "comment": "8"
+  },
+  {
+    "id": 5,
+    "clientName": "Client E",
+    "assignedBy": "Michael",
+    "taskDescription": "Fix bugs in the frontend",
+    "assignedTo": "Sophia",
+    "date": "2023-08-29",
+    "comment": "22"
+  },
+  {
+    "id": 6,
+    "clientName": "Client F",
+    "assignedBy": "William",
+    "taskDescription": "Create marketing materials",
+    "assignedTo": "Olivia",
+    "date": "2023-08-30",
+    "comment": "18"
+  },
+  {
+    "id": 7,
+    "clientName": "Client G",
+    "assignedBy": "Ethan",
+    "taskDescription": "Test application performance",
+    "assignedTo": "Liam",
+    "date": "2023-08-31",
+    "comment": "2"
+  },
+  {
+    "id": 8,
+    "clientName": "Client H",
+    "assignedBy": "Ava",
+    "taskDescription": "Create database schema",
+    "assignedTo": "Noah",
+    "date": "2023-09-01",
+    "comment": "33"
+  },
+  {
+    "id": 9,
+    "clientName": "Client I",
+    "assignedBy": "Mia",
+    "taskDescription": "Optimize server performance",
+    "assignedTo": "Emma",
+    "date": "2023-09-02",
+    "comment": "10"
+  },
+  {
+    "id": 10,
+    "clientName": "Client J",
+    "assignedBy": "James",
+    "taskDescription": "Prepare project presentation",
+    "assignedTo": "Lucas",
+    "date": "2023-09-03",
+    "comment": "2"
+  }
+]
